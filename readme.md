@@ -1,35 +1,44 @@
 # homebrew-tap
 
-Homebrew tap for
-[`profiler-md`](https://github.com/TomerAberbach/profiler-md), which converts
-performance profiles to human and LLM friendly Markdown.
+Homebrew tap for my formulae.
 
 ## Install
 
+Install a formula directly:
+
 ```sh
-$ brew install tomeraberbach/tap/profiler-md
+$ brew install tomeraberbach/tap/<formula>
 ```
 
-Or tap first and then install:
+Or tap first and then install by name:
 
 ```sh
 $ brew tap tomeraberbach/tap
-$ brew install profiler-md
+$ brew install <formula>
 ```
 
 Or in a `brew bundle` `Brewfile`:
 
 ```ruby
 tap "tomeraberbach/tap"
-brew "profiler-md"
+brew "<formula>"
+```
+
+## Formulae
+
+### profiler-md
+
+[`profiler-md`](https://github.com/TomerAberbach/profiler-md) converts
+performance profiles to human and LLM friendly Markdown.
+
+```sh
+$ brew install tomeraberbach/tap/profiler-md
 ```
 
 ## Issues
 
-The `profiler-md` release workflow updates the formula on each npm publish.
-Report bugs on
-[`profiler-md`](https://github.com/TomerAberbach/profiler-md/issues) rather than
-here.
+Each project's release workflow updates its formula. Report bugs on the
+project's repository rather than here.
 
 ## License
 
