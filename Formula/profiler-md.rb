@@ -1,8 +1,8 @@
 class ProfilerMd < Formula
   desc "Convert performance profiles to human and LLM friendly Markdown"
   homepage "https://github.com/TomerAberbach/profiler-md"
-  url "https://registry.npmjs.org/profiler-md/-/profiler-md-0.6.0.tgz"
-  sha256 "d6583b4e70c2a89d4270a68851cf592b27c5bb42ea915ab6da4ff18f76ddb4cc"
+  url "https://registry.npmjs.org/profiler-md/-/profiler-md-0.7.0.tgz"
+  sha256 "15f4c563e8ea756efacb6352248bd152463871e9ab4edc6ea7f99997d6615b48"
   license "MIT"
 
   depends_on "node"
