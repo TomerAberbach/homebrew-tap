@@ -18,5 +18,8 @@ class ProfilerMd < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/profiler-md --version")
+
+    output = pipe_output("#{bin}/profiler-md --format collapsed", "main;work 3\nmain;idle 1\n", 0)
+    assert_match "Collected 4 samples", output
   end
 end
