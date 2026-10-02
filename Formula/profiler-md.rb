@@ -10,6 +10,10 @@ class ProfilerMd < Formula
   def install
     system "npm", "install", *std_npm_args
     bin.install_symlink libexec.glob("bin/*")
+    man1.install_symlink libexec.glob("share/man/man1/*")
+    # The CLI names PowerShell `pwsh`, which a custom format passes through
+    generate_completions_from_executable(bin/"profiler-md", shell_parameter_format: "--completion=",
+                                                            shells:                 [:bash, :zsh, :fish, :pwsh])
   end
 
   test do
